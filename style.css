@@ -6,52 +6,60 @@ body {
 }
 
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Navigation styling */
-nav {
-    margin-top: 10px;
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+#menu-bar {
+    display: none;
+    cursor: pointer;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s ease;
 }
 
-nav a:hover, nav a:focus {
-    color: #f0a30a;
-    text-decoration: underline;
-}
-
-/* Responsive nav links */
-@media (max-width: 600px) {
-    nav ul li {
+@media (max-width: 768px) {
+    #menu-bar {
         display: block;
-        text-align: center;
-        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul li {
+        margin-top: 10px;
     }
 }
 
-/* Header and navigation effects */
-header {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
 
 footer {
     background: #222;
