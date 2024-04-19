@@ -6,10 +6,6 @@ body {
 }
 
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
     background: #333;
     color: white;
     padding: 10px 20px;
@@ -74,7 +70,12 @@ nav a:hover, nav a:focus {
         flex-direction: column;
         display: none;
     }
+
+    nav ul li {
+        margin-top: 10px;
+    }
 }
+
 
 /* Responsive nav links */
 @media (max-width: 600px) {
