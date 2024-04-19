@@ -45,6 +45,11 @@ nav a {
     text-decoration: none;
 }
 
+nav b {
+    color: rgb(0, 140, 255);
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     #menu-bar {
         display: block;
