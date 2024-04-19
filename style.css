@@ -14,11 +14,6 @@ header {
     justify-content: space-between;
 }
 
-/* Navigation styling */
-nav {
-    margin-top: 10px;
-}
-
 .logo {
     color: white;
     text-decoration: none;
@@ -35,7 +30,6 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -43,22 +37,12 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
     margin-left: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover, nav a:focus {
-    color: #f0a30a;
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -76,21 +60,6 @@ nav a:hover, nav a:focus {
     }
 }
 
-
-/* Responsive nav links */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-}
-
-/* Header and navigation effects */
-header {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
 
 footer {
     background: #222;
