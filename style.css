@@ -21,6 +21,8 @@ header {
 /* Navigation styling */
 nav {
     margin-top: 10px;
+}
+
 .logo {
     color: white;
     text-decoration: none;
@@ -62,6 +64,7 @@ nav a:hover, nav a:focus {
     color: #f0a30a;
     text-decoration: underline;
 }
+
 @media (max-width: 768px) {
     #menu-bar {
         display: block;
@@ -71,6 +74,7 @@ nav a:hover, nav a:focus {
         flex-direction: column;
         display: none;
     }
+}
 
 /* Responsive nav links */
 @media (max-width: 600px) {
@@ -93,13 +97,16 @@ footer {
     padding: 10px 20px;
     text-align: center;
 }
+
 header h1 {
     margin: 0;
 }
+
 main {
     padding: 20px;
     text-align: center;
 }
+
 .gallery img {
     margin: 10px;
     border: 5px solid #fff;
@@ -107,9 +114,11 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
 }
+
 .gallery img:hover {
     transform: scale(1.05);
 }
+
 footer p {
     margin: 0;
 }
