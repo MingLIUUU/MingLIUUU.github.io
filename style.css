@@ -60,6 +60,26 @@ nav a {
     }
 }
 
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/home.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .content span {
+    font-size: 3rem;
+    color: var(--pink);
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: var(--black);
+    width: 60rem;
+}
 
 footer {
     background: #222;
