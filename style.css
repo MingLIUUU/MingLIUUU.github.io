@@ -68,14 +68,14 @@ nav b {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 2048px;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
 .carousel img {
     max-width: 100%;
     height: auto;
-    min-width:2048px;
+    min-width: 100%;
     display: block;
 }
 .carousel-container {
