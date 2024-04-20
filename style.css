@@ -52,11 +52,8 @@ nav a {
     text-decoration: none;
 }
 
+/* Media query for mobile devices */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; 
-        padding: 10px;
-    }
 
     #menu-bar {
         display: block;
