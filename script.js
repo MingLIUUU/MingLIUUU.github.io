@@ -4,6 +4,7 @@ function toggleMenu() {
         navbar.style.display = "none";
     } else {
         navbar.style.display = "block";
+        navbar.style.visibility = "visible";
     }
 }
 
