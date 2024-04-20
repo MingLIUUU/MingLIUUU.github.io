@@ -9,7 +9,6 @@ function toggleMenu() {
 
 $(document).ready(function(){
     $('.your-carousel-class').slick({
-        // options here
         dots: true,
         infinite: true,
         speed: 500,
