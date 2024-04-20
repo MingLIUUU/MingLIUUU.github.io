@@ -80,6 +80,16 @@ nav b {
     }
 }
 
+@media (min-width: 769px) {
+    #navbar {
+        display: block; 
+    }
+
+    #menu-bar {
+        display: none; 
+    }
+}
+
 .carousel {
     position: relative;
     width: 100%;
