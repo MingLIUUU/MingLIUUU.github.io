@@ -12,7 +12,9 @@ $(document).ready(function(){
         // options here
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
         slidesToShow: 1,
         adaptiveHeight: true
     });
