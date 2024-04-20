@@ -59,10 +59,6 @@ nav b {
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; 
-        padding: 10px;
-    }
 
     #menu-bar {
         display: block;
@@ -77,7 +73,6 @@ nav b {
     nav ul li {
         text-align:center;
         padding: 10px 0;
-        margin-top: 10px;
     }
 }
 
