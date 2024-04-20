@@ -29,6 +29,11 @@ header {
     cursor: pointer;
 }
 
+#navbar {
+    display: none;
+    cursor: pointer;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
