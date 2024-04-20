@@ -6,3 +6,14 @@ function toggleMenu() {
         navbar.style.display = "block";
     }
 }
+
+$(document).ready(function(){
+    $('.your-carousel-class').slick({
+        // options here
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});
