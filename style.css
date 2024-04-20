@@ -65,25 +65,24 @@ nav b {
     }
 }
 
-.home {
-    min-height: 100vh;
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel img {
+    width: 100%;
+    display: block;
+}
+.carousel-container {
     display: flex;
-    align-items: center;
-    background: url(../images/home.JPEG) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    width: calc(100% * 3); 
 }
-
-.home .content span {
-    font-size: 3rem;
-    color: var(--black);
-}
-
-.home .content h3 {
-    font-size: 6rem;
-    color: var(--white);
-    width: 60rem;
+.carousel-item {
+    width: calc(100% / 3); 
+    transition: transform 0.5s ease;
 }
 
 footer {
