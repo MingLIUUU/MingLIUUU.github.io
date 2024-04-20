@@ -73,7 +73,10 @@ nav b {
     overflow: hidden;
 }
 .carousel img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-width:300px;
+    max-height:80vh;
     display: block;
 }
 .carousel-container {
