@@ -29,11 +29,6 @@ header {
     cursor: pointer;
 }
 
-#navbar {
-    display: none;
-    cursor: pointer;
-}
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -53,6 +48,12 @@ nav a {
 nav b {
     color: rgb(0, 140, 255);
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
