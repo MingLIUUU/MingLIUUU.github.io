@@ -32,7 +32,6 @@ header {
 
 #menu-bar {
     display: none; /* hide by defaul*/
-    cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
 }
 
 /* Navigation stylingh*/
