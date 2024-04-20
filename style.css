@@ -62,6 +62,7 @@ nav b {
 
     #menu-bar {
         display: block;
+        padding: 10px 0;
     }
 
     nav ul {
@@ -71,7 +72,7 @@ nav b {
     }
 
     nav ul li {
-        text-align:center;
+        text-align: center;
         padding: 10px 0;
     }
 }
