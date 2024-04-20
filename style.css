@@ -68,7 +68,7 @@ nav b {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 2048px;
     margin: auto;
     overflow: hidden;
 }
