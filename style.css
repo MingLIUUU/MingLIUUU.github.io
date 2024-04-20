@@ -6,13 +6,15 @@ body {
 }
 
 header {
-    background: #333;
-    color: white;
+    background-color: #000; 
+    color: #fff; /
     padding: 10px 20px;
+    text-align: center;
     display: flex;
+    justify-content: space-between; 
     align-items: center;
-    justify-content: space-between;
 }
+
 
 .logo {
     color: white;
@@ -45,27 +47,16 @@ nav a {
     text-decoration: none;
 }
 
-nav b {
-    color: rgb(0, 140, 255);
-    text-decoration: none;
-}
-
 @media (max-width: 768px) {
-    #navbar {
-        display: none;
+    header {
+        flex-direction: column; 
+        padding: 10px;
     }
+
     #menu-bar {
         display: block;
     }
-}
 
-@media (max-width: 768px) {
-    #menu-bar {
-        display: none;
-    }
-    #navbar {
-        display: block;
-    }
     nav ul {
         flex-direction: column;
         display: none;
