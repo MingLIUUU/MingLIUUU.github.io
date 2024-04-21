@@ -50,8 +50,8 @@ section {
 }
 
 .btn:hover {
-    background: var(--blue);
-    border-color: var(--blue);
+    background: aqua;
+    border-color: var(--black);
     color: #fff;
 }
 
@@ -122,6 +122,33 @@ header .navbar a {
     color: #fff;
     padding: 1.5rem;
     background: linear-gradient(to right, var(--blue) 0%, transparent 100%);
+    text-transform: none;
+}
+
+.heading h3 {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #fff;
+    padding: 1.5rem;
+    text-transform: none;
+    transition: none;
+    box-sizing: border-box;
+}
+
+.heading h3 p{
+    font-size: 2rem;
+    font-weight: 100;
+    color: #fff;
+    padding: 2rem;
+    text-transform: none;
+    transition: none;
+    box-sizing:border-box;
+}
+
+.heading h3 p a{
+    font-size: 2rem;
+    font-weight: 100;
+    color: aqua;
 }
 
 
@@ -140,7 +167,7 @@ header .navbar a {
 .home .content {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.771) 0%, transparent 100%);
     padding: 2rem;
-    width: 200%;
+    width: 100%;
     box-sizing: border-box;
 }
 .home .content span {
@@ -183,7 +210,7 @@ header .navbar a {
 
 .step-container .step span {
     font-size: 7rem;
-    color: var(--blue);
+    color: aqua;
     font-weight: bolder;
 }
 
@@ -196,33 +223,68 @@ header .navbar a {
     font-size: 1.5rem;
     color: #666;
     padding: 1rem 0;
+    text-transform: none;
 }
 
+
+#images-wrapper {    
+    line-height: 0;       
+     -webkit-column-count: 3;    
+     -webkit-column-gap: 0px;    
+     -moz-column-count: 3;
+     -moz-column-gap: 0px;
+      column-count: 3;    
+      column-gap: 0px;    
+ }  
+ #images-wrapper img {    
+    width: 100% !important;    
+    height: auto !important;  
+ }  
+ #images-wrapper{    
+    display:inline-block;    
+    margin-right: auto;    
+    margin-left: auto;  
+ }
+
+
 .image .box-container {
+
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    column-gap: 10px;
+    padding: 10px;
+
+}
+
+.image .comic-wrap {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 3fr));
     gap: 10px;
     padding: 10px;
 }
 
-.image .box-container .box {
-    flex: 1 1 30rem;
-    margin: 1rem;
+.box {
+    margin: 0 0 10px 0; 
     overflow: hidden;
     position: relative;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .9);
-    height: 20rem;
+    height: auto; 
     cursor: pointer;
+    break-inside: avoid; 
 }
 
-.image .box-container .box img {
+.box img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #fff;
 }
 
-.image .box-container .box .info {
+.box .info {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -238,21 +300,21 @@ header .navbar a {
     opacity: 0;
 }
 
-.image .box-container .box:hover .info {
+.box:hover .info {
     transform: scale(1);
     opacity: 1;
 }
 
-.image .box-container .box:hover img {
+.box:hover img {
     transform: scale(1.3);
 }
 
-.image .box-container .box .info h3 {
+.box .info h3 {
     font-size: 3rem;
     color: var(--black);
 }
 
-.image .box-container .box .info p {
+.box .info p {
     font-size: 1.7rem;
     color: #333;
     padding: 1rem;
@@ -271,7 +333,6 @@ footer p{
         display: block;
     }
 
-
     header .navbar ul {
         display: block; 
     }
@@ -280,9 +341,6 @@ footer p{
         margin-bottom: 10px; 
         display: block;
     }
-
-
-
 
     header .navbar {
         position: absolute;
@@ -323,16 +381,37 @@ footer p{
 }
 
 
-@media (max-width:450px) {
+@media (max-width:400px) {
     html {
         font-size: 50%;
     }
+
 }
+
 
 @media (max-width:1200px) {
     html {
         font-size: 55%;
     }
+    .image .box-container {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
+    }
+
+}
+
+@media (max-width:800px) {
+    html {
+        font-size: 55%;
+    }
+    .image .box-container {
+        -moz-column-count:    1;
+        -webkit-column-count: 1;
+        column-count:        1;
+        }
+
+
 }
 
 @media (max-width:991px) {
