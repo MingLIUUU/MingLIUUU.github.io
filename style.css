@@ -108,17 +108,18 @@ header .navbar a {
 
 .heading {
     text-align: left;
+    margin-top: 4%;
 }
 
 .heading h1 {
     font-size: 4rem;
     color: #fff;
-    padding-bottom: 3rem;
     text-transform: uppercase;
+    padding-bottom: 1rem;
 }
 
 .heading h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     padding: 1.5rem;
     background: linear-gradient(to right, var(--blue) 0%, transparent 100%);
@@ -127,7 +128,7 @@ header .navbar a {
 }
 
 .heading h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 100;
     color: #fff;
     padding: 1.5rem;
@@ -195,7 +196,7 @@ header .navbar a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.771) 0%, transparent 25%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, transparent 15%);
     display: flex;
     position: absolute;
     height: auto;
