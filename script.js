@@ -12,8 +12,8 @@ window.onscroll = () => {
 }
 
 const images = [
-    'images/home1.JPG',
-    'images/home1.JPG',
+    'images/home1.jpg',
+    'images/home1.jpg',
     'images/home2.jpg',
     'images/home3.jpg',
     'images/home4.jpg'
