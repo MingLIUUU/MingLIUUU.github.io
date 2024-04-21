@@ -15,8 +15,7 @@ const images = [
     'images/home1.JPG',
     'images/home2.jpg',
     'images/home3.jpg',
-    'images/home4.jpg',
-    'images/home5.jpg'
+    'images/home4.jpg'
 
   ]
 
