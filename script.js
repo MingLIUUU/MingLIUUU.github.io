@@ -11,17 +11,23 @@ window.onscroll = () => {
     navbar.classList.remove('nav-toggle');
 }
 
-let slideIndex = 0;
-showSlides();
+const images = [
+    url(images/home1.JPEG),
+    url(images/XiaoHua.JPEG)
+  ]
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  window.onload = () => {
+    // preloading
+    document.body.style.backgroundImage = `url(${images[0]})`
+    document.querySelector('.hidden').src = images[1]
+    let i = 1
+    setInterval(() => {
+      document.body.style.backgroundImage = `url(${images[i++]})`
+
+      if (i === images.length) i = 0
+      else {
+        // preload the next image, so that it transitions smoothly
+        document.querySelector('.hidden').src = images[i]
+      }
+    }, 7000)
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}

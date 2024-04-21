@@ -124,10 +124,26 @@ header .navbar a {
     display: flex;
     align-items: center;
 
-    background: url(images/home1.JPEG) no-repeat;
+    animation: imageSlideShow 10s infinite;
+    /*background: url(images/home1.JPEG) no-repeat;*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+@keyframes imageSlideShow {
+    0%, 20% {
+        background-image: url('images/home1.JPEG');
+    }
+    25%, 45% {
+        background-image: url('images/XiaoHua.JPG');
+    }
+    50%, 75% {
+        background-image: url('images/home1.JPEG');
+    }
+    80%, 100%{
+        background-image: url('images/XiaoHua.JPG');
+    }
 }
 
 .home .content span {
@@ -234,6 +250,13 @@ header .navbar a {
     font-size: 1.7rem;
     color: #333;
     padding: 1rem;
+}
+
+footer p{
+    font-size: 1rem;
+    color: #fff;
+    background: var(--black);
+    text-align: center;
 }
 
 /* Media queries*/
