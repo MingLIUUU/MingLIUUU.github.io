@@ -196,12 +196,25 @@ header .navbar a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to t, rgba(0, 0, 0, 1) 10%, transparent 20%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, transparent 15%);
     display: flex;
     position: absolute;
     height: auto;
     padding: 100%;
     z-index: 0;
+
+    /*
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px; 
+    color: #fff; 
+    padding: 20px;
+    user-select: none; 
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    */
     
 }
 
