@@ -17,7 +17,11 @@
 <body>
 
     <header>
-        <h1>MINGOLIA</h1>
+        <a href="index.html" style="color: aliceblue;"> 
+            <h1 style="user-select: none; ">
+                <img src="./images/logo.png" alt="" width="25" height="25">
+            MINGOLIA
+        </h1> </a>
         <div id="menu-bar" class="fas fa-bars"></div>
         <nav class="navbar">
             <ul id="navbar">
@@ -37,12 +41,17 @@
         <div class="content">
             <span style="color: aqua;">Illustrations & Designs & Programming</span>
             <h3>Ming Liu</h3>
-            <a href="#div" class="btn">More about</a>
+            <a href="#smry" class="btn">More about</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+
     </section>
 
 
-    <section class="step-container" id="div">
+
+
+    <section class="step-container" id="smry">
 
         <div class="step">
             <span>01</span>
@@ -74,7 +83,7 @@
 
         <div class="heading">
             <h1 style="color: aqua;">Project Hightlights</h1>
-            <h2>Nanoleaf Storyboard, in collaboration with Kathie Yang.</h2>
+            <h2>Storyboard design for Nanoleaf China</h2>
         </div>
         <div class="box-container">
             <div class="box">
@@ -146,7 +155,11 @@
         <div class="heading">
             <h2>Pet Portrait</h2>
         </div>
-        <div class="box-container">
+        <div class="box-container" style="
+            -moz-column-count:    3;
+            -webkit-column-count: 3;
+            column-count:         3;
+        ">
             <div class="box">
                 <img src="images/pet/IMG_1065.JPG" alt="">
                 <div class="info">
@@ -189,7 +202,7 @@
         </div>
 
         <div class="heading">
-            <h2>Aerobicx Re-Design</h2>
+            <h2>ArobicX China Rebanding</h2>
         </div>
         <div class="box-container">
             <div class="box">

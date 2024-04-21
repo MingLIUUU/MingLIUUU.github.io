@@ -123,6 +123,7 @@ header .navbar a {
     padding: 1.5rem;
     background: linear-gradient(to right, var(--blue) 0%, transparent 100%);
     text-transform: none;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .heading h3 {
@@ -162,6 +163,33 @@ header .navbar a {
     background-position: center;
     transition: background-image 0.5s ease-in-out;
     opacity: 0;
+}
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px; 
+    color: #fff; 
+    padding: 20px;
+    user-select: none; 
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev {
+    left: 0; 
+    border-radius: 3px 0 0 3px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
 
 .home .content {

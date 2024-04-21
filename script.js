@@ -11,6 +11,7 @@ window.onscroll = () => {
     navbar.classList.remove('nav-toggle');
 }
 
+// slider control
 const images = [
     'images/home1.jpg',
     'images/home2.jpg',
@@ -18,13 +19,23 @@ const images = [
     'images/home4.jpg'
 
   ]
+let slideIndex = 1;
+
+// Next/previous controls
+function plusSlides(n) {
+    slideIndex = (slideIndex + n + images.length) % images.length;
+    $('.home').css({
+        'opacity': '0', // Hide before change
+        'background-image': 'url(' + images[slideIndex] + ')' // Change the image
+    }).animate({'opacity': '1'}, 500); // Fade in the new image
+  }
 
 $(document).ready(function() {
-    var i = 0;
-
     function updateBackground() {
-        var nextImage = images[i]; 
-        i = (i + 1) % images.length; 
+        var nextImage = images[slideIndex]; 
+        if (slideIndex != 1) {
+            slideIndex = (slideIndex + 1) % images.length; 
+        }
 
         // Update the background image without fading
         $('.home').css({
