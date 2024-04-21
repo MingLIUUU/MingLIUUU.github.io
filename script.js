@@ -12,22 +12,24 @@ window.onscroll = () => {
 }
 
 const images = [
-    url(images/home1.JPEG),
-    url(images/XiaoHua.JPEG)
+    'images/home1.JPEG',
+    'images/XiaoHua.jpg'
   ]
 
-  window.onload = () => {
-    // preloading
-    document.body.style.backgroundImage = `url(${images[0]})`
-    document.querySelector('.hidden').src = images[1]
-    let i = 1
-    setInterval(() => {
-      document.body.style.backgroundImage = `url(${images[i++]})`
+$(document).ready(function() {
+    var i = 0;
 
-      if (i === images.length) i = 0
-      else {
-        // preload the next image, so that it transitions smoothly
-        document.querySelector('.hidden').src = images[i]
-      }
-    }, 7000)
-  }
+    function updateBackground() {
+        var nextImage = images[i]; 
+        i = (i + 1) % images.length; 
+
+        // Update the background image without fading
+        $('.home').css({
+            'opacity': '0', // Hide before change
+            'background-image': 'url(' + nextImage + ')' // Change the image
+        }).animate({'opacity': '1'}, 500); // Fade in the new image
+    }
+
+    setInterval(updateBackground, 5000); // Change image every 5s
+    updateBackground(); // Initial call to set the first image
+});

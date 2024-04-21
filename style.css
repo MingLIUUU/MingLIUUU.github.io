@@ -120,15 +120,29 @@ header .navbar a {
 
 
 .home {
-    min-height: 100vh;
+    /*min-height: 100vh;
     display: flex;
     align-items: center;
 
-    animation: imageSlideShow 10s infinite;
-    /*background: url(images/home1.JPEG) no-repeat;*/
+    animation: fadeSlideShow 1s infinite linear;
+    background: url(images/home1.JPEG) no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes fadeSlideShow {
+    0%, 8.33% { opacity: 1; }
+    33.33%, 100% { opacity: 0; }
 }
 
 @keyframes imageSlideShow {
@@ -302,7 +316,7 @@ footer p{
 
     .home {
         justify-content: center;
-        background-position: left;
+        background-position: center;
     }
     .home .content {
         text-align: center;
