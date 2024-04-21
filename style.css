@@ -165,7 +165,6 @@ header .navbar a {
     opacity: 0;
 }
 
-
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -192,11 +191,39 @@ header .navbar a {
     background-color: rgba(0,0,0,0.8);
 }
 
+.bgcover {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.771) 0%, transparent 25%);
+    display: flex;
+    position: absolute;
+    height: auto;
+    padding: 100%;
+    z-index: 0;
+
+    /*
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px; 
+    color: #fff; 
+    padding: 20px;
+    user-select: none; 
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    */
+    
+}
+
+
 .home .content {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.771) 0%, transparent 100%);
+    /*background: linear-gradient(to top, rgba(0, 0, 0, 0.771) 0%, transparent 100%);*/
     padding: 2rem;
     width: 100%;
     box-sizing: border-box;
+    z-index: 10;
 }
 .home .content span {
     font-size: 3rem;
