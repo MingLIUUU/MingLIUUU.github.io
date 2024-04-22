@@ -31,6 +31,7 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
+    padding: 0;
     background: var(--black);
 }
 
@@ -122,7 +123,8 @@ header .navbar a {
     font-size: 2rem;
     color: #fff;
     padding: 1.5rem;
-    background: linear-gradient(to right, var(--blue) 0%, transparent 100%);
+    background: linear-gradient(to right, var(--blue) 75%, transparent 100%);
+    text-shadow: 0 0 5px var(--blue);
     text-transform: none;
     border-radius: 1rem 0 0 1rem;
 }
@@ -152,7 +154,6 @@ header .navbar a {
     font-weight: 100;
     color: aqua;
 }
-
 
 .home {
     position: relative;
@@ -207,13 +208,11 @@ header .navbar a {
 
 
 .home .content {
-    
     padding: 2rem;
     width: 100%;
     box-sizing: border-box;
     z-index: 10;
-    text-shadow: 
-    0 0 3px #000;
+    text-shadow: 0 0 3px #000;
 }
 
 .home .content span {
@@ -346,6 +345,15 @@ header .navbar a {
     transform: scale(1.3);
 }
 
+.box.no-hover:hover .info {
+    transform: scale(1);
+    opacity: 0;
+}
+
+.box.no-hover:hover img {
+    transform: none;
+}
+
 .box .info h3 {
     font-size: 3rem;
     color: var(--black);
@@ -356,6 +364,38 @@ header .navbar a {
     color: #333;
     padding: 1rem;
 }
+
+.about-me {
+    align-items:flex-start;
+    justify-content: space-around;
+    margin: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    min-width: 768px;
+    display: flex;
+    
+    /*text-align: left;
+    margin-top: 4%;
+        padding: 20px;
+    margin: 3rem;*/
+
+    background: linear-gradient(to top, rgba(80, 135, 254, 0.5) 25%, transparent 150%);
+    border-radius: 3rem 3rem 3rem 3rem;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #555;
+}
+
+.biography {
+    width: 100%;
+    min-width: 40rem;
+}
+
 
 footer p{
     font-size: 1rem;
@@ -414,6 +454,16 @@ footer p{
     .home .content h3 {
         font-size: 4rem;
         width: auto;
+    }
+    
+    .about-me {
+        display: block;
+    }
+    .biopic{
+        justify-content: center;
+    }
+    .biography {
+        width: 100%;
     }
 }
 
