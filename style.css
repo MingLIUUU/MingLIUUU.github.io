@@ -202,42 +202,23 @@ header .navbar a {
     height: auto;
     padding: 100%;
     z-index: 0;
-
-    /*
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 20px; 
-    color: #fff; 
-    padding: 20px;
-    user-select: none; 
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    */
     
 }
 
 
 .home .content {
-    /*background: linear-gradient(to top, rgba(0, 0, 0, 0.771) 0%, transparent 100%);*/
+    
     padding: 2rem;
     width: 100%;
     box-sizing: border-box;
     z-index: 10;
+    text-shadow: 
+    0 0 3px #000;
 }
+
 .home .content span {
     font-size: 3rem;
     color: var(--blue);
-    text-shadow:
-    -2px -2px 0 #000000,
-    2px -2px 0 #000000,
-    -2px 2px 0 #000000,
-    2px 2px 0 #000000,  
-    -3px 0 0 #000000,
-    3px 0 0 #000000,
-    0 3px 0 #000000,
-    0 -3px 0 #000000;
 }
 
 .home .content h3 {
@@ -441,6 +422,7 @@ footer p{
     html {
         font-size: 50%;
     }
+
 
 }
 
