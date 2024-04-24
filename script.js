@@ -54,31 +54,51 @@ $(document).ready(function() {
     updateBackground(slideIndex); // Set the first image immediately
 });
 
+// image viewer
+function openImageViewer(src) {
+    document.getElementById('imgZoom').src = src;
+    document.getElementById('imageViewer').style.display = "flex";
+}
 
-// Next/previous controls
-/*
-function plusSlides(n) {
-    var nextImage = images[slideIndex];
-    slideIndex = (slideIndex + n) % images.length; 
-     
-    $('.home').css({
-        'opacity': '0', // Hide before change
-        'background-image': 'url(' + nextImage + ')' // Change the image
-    }).animate({'opacity': '1'}, 500); // Fade in the new image
-  }
+function closeImageViewer() {
+    document.getElementById('imageViewer').style.display = "none";
+}
 
-$(document).ready(function() {
-    function updateBackground() {
-        var nextImage = images[slideIndex]; 
-        slideIndex = (slideIndex + 1) % images.length; 
+let scale = 1;
+const zoomIn = () => {
+    scale *= 1.1;
+    document.getElementById('imgZoom').style.transform = `scale(${scale})`;
+};
 
-        // Update the background image without fading
-        $('.home').css({
-            'opacity': '0', // Hide before change
-            'background-image': 'url(' + nextImage + ')' // Change the image
-        }).animate({'opacity': '1'}, 500); // Fade in the new image
-    }
+const zoomOut = () => {
+    scale /= 1.1;
+    document.getElementById('imgZoom').style.transform = `scale(${scale})`;
+};
 
-    setInterval(updateBackground, 2000); // Change image every 5s
-    updateBackground(); // Initial call to set the first image
-});*/
+// image viewer dragging
+document.addEventListener('DOMContentLoaded', function() {
+    const img = document.getElementById('imgZoom');
+    let isDragging = false;
+    let offsetX = 0, offsetY = 0;
+
+    img.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        offsetX = e.offsetX;
+        offsetY = e.offsetY;
+        this.style.cursor = 'grabbing';
+    });
+
+    img.addEventListener('mousemove', function(e) {
+        if (isDragging) {
+            const rect = img.getBoundingClientRect();
+            img.style.left = (e.clientX - offsetX) + 'px';
+            img.style.top = (e.clientY - offsetY) + 'px';
+        }
+    });
+
+    document.addEventListener('mouseup', function() {
+        isDragging = false;
+        img.style.cursor = 'grab';
+    });
+});
+

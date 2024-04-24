@@ -14,11 +14,12 @@
 </head>
 <body">
     <header>
-        <a href="index.html" style="color: aliceblue;"> 
-            <h1 style="user-select: none; ">
-                <img src="./images/logo.png" alt="" width="25" height="25">
+        <a href="index.html" style="color: aliceblue; display:inline-flex;"> 
+            <img src="./images/logo.png" alt="" width="30" height="30" style="margin-right: 2rem;">
+            <h1 style="user-select: none; align-content: center;">
             MINGOLIA
-        </h1> </a>
+            </h1>
+        </a>
         <div id="menu-bar" class="fas fa-bars"></div>
         <nav class="navbar">
             <ul id="navbar">
@@ -27,7 +28,7 @@
                 <li><a href="characters.html">Characters</a></li>
                 <li><a href="design.html">Designs</a></li>
                 <li><a href="https://github.com/MingLIUUU">GitHub</a></li>
-                <li><a href="about.html"  style="color: aqua;">About Me</a></li>
+                <li><a href="about.html"  style="color: aqua; font-weight: bold;">About Me</a></li>
             </ul>
         </nav>
         
@@ -36,42 +37,42 @@
     <div style="background-color: rgba(0, 255, 255);
         text-align: center;
         padding: 40px;
-        margin-top: 5rem;
-    ">
+        margin-top: 5rem;">
         <img src="./images/logo.png" alt="" width="100px" height="100px" style="box-shadow: 0 0 5px rgb(0, 0, 0); border-radius: 50px;">
-
     </div>
 
+
+    <!-- Sample images for viewer --
+    <img src="images/Hua.JPG" alt="Sample Image 1" style="width:150px; cursor: pointer;" onclick="openImageViewer(this.src)">
+
+     Image Viewer Modal --
+    <div id="imageViewer" class="image-viewer">
+        <span class="close-btn" onclick="closeImageViewer()">&times;</span>
+        <img class="modal-content" id="imgZoom" src="">
+        <button onclick="zoomIn()" style="right: 0;">Zoom In</button>
+        <button onclick="zoomOut()" style="left: 0;">Zoom Out</button>
+    </div> -->
+
+    <section class="about-me">
     <section class="heading">
-        <section class="about-me" style="display: block;">
-            <h3>
-                <p>Hello, I am Ming. I also used the name MingoLia as a freelance illustrator. I studied Computer Science, Genetics, and Physiology in my university. I also have a deep interest in storytelling, screenwriting, and illustration, so I self-learned a lot of skills in storytelling and graphic design. 
-                </p>
-                <p>My <a href="https://github.com/MingLIUUU">GitHub</a> contains mostly my school works including software development and bioinformatic analysis. I set up this website from scraching by manually writing HTML/CSS/JavaScript. I am also interested in programming and machine learning. I have done a project that applied machine learning to enhance the process of animal experimental videos. </p>
-            </h3>
-        </section>
-        <section class="about-me">
-        <div class="box no-hover" style="margin-right: 5rem; margin-top: 5rem; width: fit-content; max-width: 30rem;" >
-            <img src="images/Hua.JPG" alt="" style="user-select: none;">
-        </div>
-        <div class="biography">
-            <div class="heading">
-                <h3>
-                <p>I love animals. I have a lovely cat named Xiao Hua. She is a domestic shorthair from China. And yes! My original character Xiao Hua is based on her! My profile and the logo of this website is a paiting of Xiao Hua by my friend Feng.</p>
-
-                <p>Contact me at 
+        <div class="row">
+            <h3 style="min-width: 400px; "><p>
+                Hello, I am Ming. I also used the name MingoLia as a freelance illustrator. I studied Computer Science, Genetics, and Physiology in my university. I also have a deep interest in storytelling, screenwriting, and illustration, so I self-learned a lot of skills in storytelling and graphic design.<br><br>
+                My <a href="https://github.com/MingLIUUU">GitHub</a> contains mostly my school works including software development and bioinformatic analysis. I set up this website from scraching by manually writing HTML/CSS/JavaScript. I am also interested in programming and machine learning. I have done a project that applied machine learning to enhance the process of animal experimental videos.<br><br>
+                I love animals. I have a lovely cat named Xiao Hua. She is a domestic shorthair from China. And yes! My original character Xiao Hua is based on her! My profile and the logo of this website is a painting of Xiao Hua by my friend Feng.<br><br>
+                Contact me at 
                     <a href="https://instagram.com/mingo_lia" ">Instagram</a> |
-                    <a href="https://twitter.com/MingoLIAAA">Twitter</a>. 
+                    <a href="https://twitter.com/MingoLIAAA">Twitter</a>. <br><br>
                     My <a href="https://linktr.ee/mingolia">linktree</a>.
-                </p>
-                <h3>
+                </p></h3>
+            <div style="justify-content: center; min-width: 400px; min-height: 400px; width: auto; height: min-content;" class="box no-hover">
+                <img src="images/Hua.JPG" alt="" style="user-select: none;">
+                <img src="images/XiaoHua.JPG" alt="" style="user-select: none;">
             </div>
-        </div>
     </section>
-    </section>
-        </div>
+    </section> 
 
-    </section>
+
 
 
     <footer>

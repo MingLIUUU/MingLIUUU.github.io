@@ -1,6 +1,6 @@
 :root {
     --blue: rgb(80, 134, 254);
-    --black: #262626;
+    --dark: #262626;
     --aque: rgb(3, 246, 238);
 }
 
@@ -13,12 +13,11 @@
     outline: none;
     border: none;
     transition: .2s linear;
-    text-transform: capitalize;
 }
 
 *::selection {
-    background: var(--black);
-    color: #fff;
+    background: var(--dark);
+    color: white;
 }
 
 html {
@@ -32,13 +31,74 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--black);
+    background: var(--dark);
 }
 
 section {
     padding: 3rem 9%;
 }
 
+/* image viewer*/
+.image-viewer {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; 
+    overflow: hidden;
+}
+
+.modal-content {
+    max-width: none; /* Remove max-width restrictions */
+    max-height: none; /* Remove max-height restrictions */
+    cursor: grab; /* Cursor indicates image can be grabbed */
+}
+
+.modal-content:active {
+    cursor: grabbing;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #ccc;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Scale image to fit */
+    max-height: 80%;
+    transition: transform 0.2s; /* Animation for zoom */
+}
+
+button {
+    position: fixed;
+    top: 10%;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/* button */
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -49,18 +109,17 @@ section {
     cursor: pointer;
     background: none;
 }
-
 .btn:hover {
     background: aqua;
-    border-color: var(--black);
+    border-color: var(--dark);
     color: #fff;
 }
-
 .btn a {
     color: white;
     text-decoration: none;
 }
 
+/* header */
 header {
     position: fixed;
     top: 0;
@@ -75,12 +134,9 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
-
 header .navbar a:hover {
     color: var(--aque);
 }
-
 #menu-bar {
     display: none;
     cursor: pointer; 
@@ -88,7 +144,6 @@ header .navbar a:hover {
     font-size: 3rem;
     padding: .5rem 1.5rem;
 }
-
 header .navbar ul {
     font-size: 2rem;
     margin-left: 2rem;
@@ -97,38 +152,35 @@ header .navbar ul {
     display: flex;
     list-style: none;
 }
-
 header .navbar ul li {
     margin-right: 2rem; 
 }
-
 header .navbar a {
     color: white;
     text-decoration: none;
 }
 
+/* heading */
 .heading {
     text-align: left;
     margin-top: 4%;
+    color: white;
 }
-
 .heading h1 {
     font-size: 4rem;
-    color: #fff;
     text-transform: uppercase;
     padding-bottom: 1rem;
+    user-select: none;
 }
 
 .heading h2 {
     font-size: 2rem;
-    color: #fff;
     padding: 1.5rem;
     background: linear-gradient(to right, var(--blue) 75%, transparent 100%);
     text-shadow: 0 0 5px var(--blue);
-    text-transform: none;
     border-radius: 1rem 0 0 1rem;
+    text-transform: capitalize;
 }
-
 .heading h3 {
     font-size: 1.5rem;
     font-weight: 100;
@@ -138,7 +190,6 @@ header .navbar a {
     transition: none;
     box-sizing: border-box;
 }
-
 .heading h3 p{
     font-size: 2rem;
     font-weight: 100;
@@ -148,12 +199,12 @@ header .navbar a {
     transition: none;
     box-sizing:border-box;
 }
-
 .heading h3 p a{
     font-size: 2rem;
     font-weight: 100;
     color: aqua;
 }
+
 
 .home {
     position: relative;
@@ -252,7 +303,7 @@ header .navbar a {
 
 .step-container .step h3 {
     font-size: 3rem;
-    color: var(--black);
+    color: var(--dark);
 }
 
 .step-container .step p {
@@ -261,26 +312,6 @@ header .navbar a {
     padding: 1rem 0;
     text-transform: none;
 }
-
-
-#images-wrapper {    
-    line-height: 0;       
-     -webkit-column-count: 3;    
-     -webkit-column-gap: 0px;    
-     -moz-column-count: 3;
-     -moz-column-gap: 0px;
-      column-count: 3;    
-      column-gap: 0px;    
- }  
- #images-wrapper img {    
-    width: 100% !important;    
-    height: auto !important;  
- }  
- #images-wrapper{    
-    display:inline-block;    
-    margin-right: auto;    
-    margin-left: auto;  
- }
 
 
 .image .box-container {
@@ -302,7 +333,7 @@ header .navbar a {
     padding: 10px;
 }
 
-.box {
+.box, .box.no-hover {
     margin: 0 0 10px 0; 
     overflow: hidden;
     position: relative;
@@ -356,7 +387,7 @@ header .navbar a {
 
 .box .info h3 {
     font-size: 3rem;
-    color: var(--black);
+    color: var(--dark);
 }
 
 .box .info p {
@@ -365,7 +396,27 @@ header .navbar a {
     padding: 1rem;
 }
 
+/* about me page */
 .about-me {
+    position: relative;
+    display: block;
+    align-content: center;
+    justify-content: center;
+}
+.about-me .container{
+    /*background: linear-gradient(to top, rgba(80, 135, 254, 0.5) 25%, transparent 150%);
+    flex: 1 1 30rem;*/
+    background: #fff;
+    margin: 3rem;
+    border-radius: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .9);
+    justify-content: center;
+}
+.about-me .container .b{
+    display: block;
+    text-align: left;
+
+    /*
     align-items:flex-start;
     justify-content: space-around;
     margin: 3rem;
@@ -374,33 +425,49 @@ header .navbar a {
     display: flex;
     min-width: 768px;
     display: flex;
-    
-    /*text-align: left;
     margin-top: 4%;
         padding: 20px;
     margin: 3rem;*/
-
-    background: linear-gradient(to top, rgba(80, 135, 254, 0.5) 25%, transparent 150%);
-    border-radius: 3rem 3rem 3rem 3rem;
 }
 
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #555;
+.about-me .container .f{
+    display: flex;
+    text-align: left;
 }
 
-.biography {
-    width: 100%;
-    min-width: 40rem;
+.content h3 {
+    text-transform: none;
+    font-size: 2rem;
+    color: var(--dark);
+    font-weight: 100;
+    margin: 2rem;
+    margin-top: 3rem; 
+    margin-bottom: 3rem;
 }
 
+.content h3:first-child {
+    margin-top: 0; 
+}
+
+.content h3:last-child {
+    margin-bottom: 0; 
+}
+
+.content h3 a{
+    font-weight: 100;
+    color: aqua;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+}
 
 footer p{
     font-size: 1rem;
     color: #fff;
-    background: var(--black);
+    background: var(--dark);
     text-align: center;
 }
 
@@ -424,7 +491,7 @@ footer p{
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--black);
+        background: var(--dark);
         padding: 1rem 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -455,15 +522,20 @@ footer p{
         font-size: 4rem;
         width: auto;
     }
-    
-    .about-me {
+
+
+    .about-me .container .content {
         display: block;
     }
-    .biopic{
-        justify-content: center;
+    .about-me .container .content h3 {
+        font-size: 2rem;
+        width: auto;
+        margin: 0;
     }
-    .biography {
-        width: 100%;
+    
+    .heading h3{
+        font-size: 4rem;
+        width: auto;
     }
 }
 
@@ -471,6 +543,11 @@ footer p{
 @media (max-width:400px) {
     html {
         font-size: 50%;
+    }
+
+    .heading h3{
+        font-size: 50%;
+        width: auto;
     }
 
 
@@ -499,6 +576,10 @@ footer p{
         column-count:        1;
         }
 
+    .heading h3{
+        font-size: 55%;
+        width: auto;
+    }
 
 }
 
@@ -508,5 +589,12 @@ footer p{
     }
     section {
         padding: 3rem 4%;
+    }
+    .row{
+        display: block;
+    }
+    .heading h3{
+        font-size:  2rem 4%;
+        width: auto;
     }
 }
