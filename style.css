@@ -549,6 +549,9 @@ footer p{
         font-size: 50%;
         width: auto;
     }
+    .row h3, .row div{
+        width: 300px;
+    }
 
 
 }
