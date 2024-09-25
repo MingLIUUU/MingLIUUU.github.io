@@ -267,7 +267,7 @@ export const projectsData = [
         isLiveDemo: true,
     },
     {
-        title: "Friend Chat App on C Server",
+        title: "Friend Chat App on C Server (2023)",
         title_zh: "C服务器上的好友聊天应用",
         description:
             "Developed a real-time chat application on a Linux server using C. Leveraged machine-level programming and BASH scripting for efficient server-side operations, ensuring reliable communication between users.",
@@ -278,7 +278,7 @@ export const projectsData = [
         isLiveDemo: true,        
     },
     {
-        title: "Bioinfo Sequence Alignment R package ",
+        title: "Bioinfo Sequence Alignment R package (2022)",
         title_zh: "",
         description:
             `Developed a web application using shiny R package and dynamic programming algorithm for sequence variant analysis with functions of multiple sequence alignment.
@@ -303,6 +303,19 @@ export const projectsData = [
 ]
 
 export const skillsData = [
+    "Python",
+    "Java",
+    "C",
+    "R",
+    "SQL (MySQL, PostgreSQL)",
+    "RestAPI",
+    "Docker",
+    "Git",
+    "Github",
+    "Github Actions (CI/CD)",
+    "Tailwind",
+    "MongoDB",
+    "Google Cloud Platform (GCP)",
     "HTML",
     "CSS",
     "JavaScript",
@@ -312,14 +325,8 @@ export const skillsData = [
     "Vue2",
     "Vue3",
     "Node",
-    "Express",
-    "Git",
-    "Github",
-    "Tailwind",
-    "Chakra UI",
-    "Boostrap",
-    "MongoDB",
     "Framer Motion",
-    "d3",
-    "UI/UX"
+    "UI/UX",
+    "Machine Learning (ML)",
+    "Crawler"
 ] 

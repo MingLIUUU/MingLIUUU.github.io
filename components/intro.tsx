@@ -124,6 +124,8 @@ export default function Intro() {
               ? "/resume_ming.pdf"
               : "/resume_ming.pdf"
           }
+          target="_blank" // Opens the PDF in a new tab
+          rel="noopener noreferrer" // Ensures security best practices when using target="_blank"
         >
           {t("download_cv")}
           <HiDownload />
