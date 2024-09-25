@@ -1,6 +1,5 @@
 "use client"
 
-import { IoLanguageOutline } from "react-icons/io5"
 import { useLocale } from "next-intl"
 import { usePathname, useRouter } from "next/navigation"
 

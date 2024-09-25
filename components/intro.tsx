@@ -2,10 +2,9 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { BsArrowRight, BsLinkedin } from "react-icons/bs"
+import { BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from "react-icons/fa"
-import Link from "next/link"
 import { Source_Code_Pro } from "next/font/google"
 import { useLocale } from "next-intl"
 import { useSectionInView } from "@/lib/hooks"
