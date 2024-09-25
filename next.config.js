@@ -15,8 +15,4 @@ const nextConfig = {
   },
 }
 
-module.exports = {
-  output: 'export', 
-  basePath: '', 
-  trailingSlash: true, 
-};
+module.exports = withNextIntl(nextConfig)
