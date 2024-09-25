@@ -1,0 +1,18 @@
+{
+    "IntroSection": {
+        "hello_im": "你好，我是",
+        "name": "刘茗正",
+        "short_intro": "我是一名全栈软件开发人员、数据分析师、动物爱好者和插画师。",
+        "download_cv": "下载简历",
+        "blog": "博客"
+    },
+    "SectionName": {
+        "about": "关于我",
+        "experience": "经验",
+        "projects": "项目",
+        "skills": "技能"
+    },
+    "AboutSection": {
+        "desc": ""
+    }
+}
