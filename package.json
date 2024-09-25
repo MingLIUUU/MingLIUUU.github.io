@@ -2,12 +2,14 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mingliuuu.github.io", 
+  "homepage": "https://mingliuuu.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
+    "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
@@ -38,6 +40,7 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "gh-pages": "^6.1.1"
   }
 }
