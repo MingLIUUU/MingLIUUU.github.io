@@ -1,7 +1,7 @@
 ## Portfolio Project
-Welcome to my portfolio project! This repository features my personal portfolio website, inspired by [ByteGrad](https://www.youtube.com/watch?v=sUKptmUVIBM&t=21888s).
+Welcome to my portfolio project! This repository features my personal portfolio website, inspired by [ByteGrad](https://www.youtube.com/watch?v=sUKptmUVIBM&t=21888s) and [Joy Peng](https://github.com/Codefreyy/joy-personal-portfolio).
 
-<img width="804" alt="image" src="https://github.com/Codefreyy/joy-personal-portfolio/assets/104683968/92cae13b-3e5f-4874-afdb-c432b1a410f0">
+<img width="804" alt="image" src="public/HomePage.png">
 
 
 
