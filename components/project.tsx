@@ -75,7 +75,7 @@ export default function Project({
                   className="w-full flex items-center gap-1 hover:underline underline-offset-2"
                 >
                   <span className="break-keep min-w-[4.5rem]">
-                    {isLiveDemo ? "Live demo" : "Demo"}
+                    {isLiveDemo ? "Live demo" : "Video Demo"}
                   </span>
                   <FiExternalLink className="w-5 h-5" />
                 </Link>
