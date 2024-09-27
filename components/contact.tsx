@@ -29,7 +29,7 @@ export default function Contact() {
       <>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         请点击此email地址向我发送邮件联系{" "}
-        <a className="underline" href="mailto:example@gmail.com">
+        <a className="underline" href="mailto:liu.mingzheng@outlook.com">
           liu.mingzheng@outlook.com
         </a>{" "}。
       </p>
@@ -38,7 +38,7 @@ export default function Contact() {
       <>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="liu.mingzheng@outlook.com">
+        <a className="underline" href="mailto:liu.mingzheng@outlook.com">
           liu.mingzheng@outlook.com
         </a>{" "}.
       </p>
