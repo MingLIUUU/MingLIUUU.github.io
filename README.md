@@ -6,10 +6,7 @@ Welcome to my portfolio project! This repository features my personal portfolio 
 
 
 ## What I Did
-- Bug Fixes: Fixed the scrolling bug from the original project.
-- Updated Projects Section: Revamped the "Intro" and "Projects" sections.
-- UX Enhancements: Added sound effects, animations, and arrow indicators for a more engaging experience.
-- Multilingual Support: Added multiple language options using i18nNext.
+- Updated Projects Section: Revamped the "Intro" and "Projects" and "Contact" sections.
 
 ## Contributions
 Contributions are welcome! Fork the repository and submit a pull request.
