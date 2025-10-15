@@ -52,8 +52,16 @@ export const headerLanguageMap = {
 }
 
 export const experiencesData = [
+        {
+        title: "Bank Credit Analyst (Full-time)",
+        location: "Toronto, Canada",
+        description:
+            "Conduct data-driven investigations on high-risk transactions flagged by monitoring systems while maintaining confidentiality.",
+        icon: React.createElement(CgHeart),
+        date: "May 2022 - Present",
+    },
     {
-        title: "Freelance Designer & Illustrator",
+        title: "Freelance Designer & Illustrator (Part-time)",
         location: "Toronto, Canada",
         description:
             "Developed and grew a successful freelance commission illustration business. Have showcased and sold original artwork at various conventions, including Comic-Con, engaging directly with customers and building a loyal following. Build a personal artwork Profolio website.",
@@ -61,23 +69,7 @@ export const experiencesData = [
         date: "May 2022 - Present",
     },
     {
-        title: "Customer Service Representative",
-        location: 
-        React.createElement("span", {},
-            React.createElement("a", {
-                href: "https://mandarinrestaurant.com/",
-                style: { textDecoration: 'underline' },
-                target: "_blank"
-            }, "Mandarin Restaurant"),
-            ", Toronto, Canada"
-        ),
-        description:
-            "Performed various cutomer service duties to assisting the operating of the restaurant, maintain positive client replationships. Build a live table occupacy visualization online application in React, TypeScript.",
-        icon: React.createElement(FaReact),
-        date: "Aug 2024 - Present",
-    },
-    {
-        title: "Administrative Support Volunteer,",
+        title: "Administrative Support Volunteer (Part-time)",
         location: 
         React.createElement("span", {},
             React.createElement("a", {
@@ -93,7 +85,7 @@ export const experiencesData = [
         date: "Apr 2024 - Present",
     },
     {
-        title: "Pet Sitter,",
+        title: "Pet Sitter (Part-time)",
         location: "Rover Group. Inc, Toronto, Canada",
         description:
             " Provided attentive care to clients’ pets, draw animal profile arts, maintain positive client replationships.",
@@ -109,7 +101,7 @@ export const experiencesData = [
         date: "Sep 2018 - Sep 2023 ",
     },
     {
-        title: "Bioinformatic Student Researcher",
+        title: "Bioinformatic Student Researcher (Full-time)",
         location: 
         React.createElement("span", {},
             React.createElement("a", {
@@ -125,7 +117,7 @@ export const experiencesData = [
         date: "May 2023  - Aug 2023",
     },
     {
-        title: "Deep Learning Data Analyst Intern",
+        title: "Deep Learning Data Analyst Intern (Part-time)",
         location: 
         React.createElement("span", {},
             React.createElement("a", {
@@ -141,7 +133,7 @@ export const experiencesData = [
         date: "Sep 2022 - Apr 2023 ",
     },
     {
-        title: "Emergency Response Support Intern",
+        title: "Emergency Response Support Intern (Full-time)",
         location: "Center for Disease Control and Prevention (CDC) in Fujian, China",
         description:
             "Supported epidemic response through data management and visualization, improving public awareness response strategies",
@@ -159,22 +151,6 @@ export const experiencesDataZn = [
             "开发并成功发展了自由职业的委托插画业务。曾在各种展会，包括漫展中展示并销售原创作品，直接与顾客互动并建立了忠实的粉丝群体。创建了个人艺术作品集网站。",
         icon: React.createElement(CgHeart),
         date: "2022年5月 - 现在",
-    },
-    {
-        title: "客户服务代表",
-        location: 
-        React.createElement("span", {},
-            React.createElement("a", {
-                href: "https://mandarinrestaurant.com/",
-                style: { textDecoration: 'underline' },
-                target: "_blank"
-            }, "Mandarin Restaurant"),
-            "，加拿大，多伦多"
-        ),
-        description:
-            "执行各种客户服务职责以协助餐厅的运营，保持积极的客户关系。使用React和TypeScript构建了一个在线桌位占用情况实时可视化应用。",
-        icon: React.createElement(FaReact),
-        date: "2024年8月 - 现在",
     },
     {
         title: "行政支持志愿者",
